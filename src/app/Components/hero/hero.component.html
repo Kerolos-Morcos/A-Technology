@@ -1,0 +1,103 @@
+<section class="d-flex justify-content-between mt-4 flex-row-reverse">
+  <div class="hero_banner">
+    <div class="personal_info pt-4 pb-5">
+      <div class="child_div d-flex flex-row-reverse align-items-center">
+        <!-- Start Profile Picture Upload -->
+        <div class="profile_picture">
+          <img [src]="imageUrl" alt="profile picture">
+          <img src="../../../assets/images/uploadImg.png" (click)="fileInput.click()" >
+        </div>
+        <input #fileInput type="file" (change)="handleFileInput($event)" accept="image/*" style="display: none;">
+        <!-- End Profile Picture Upload -->
+        
+        <!-- Start User Info -->
+        <div class="Written_info">
+          <p>اسم المورد</p>
+          <input type="text" value="هيثم محمد">
+        </div>
+        <!-- End User Info -->
+      </div>
+    </div>
+
+    <div class="type_choice d-flex gap-5">
+      <p>اختر نوع الموارد</p>
+      <label>
+        <input type="radio" name="choose_type" checked>
+        حجز خلال اليوم
+      </label>
+      <label>
+        <input type="radio" name="choose_type">
+        حجز مدة <span>(أكثر من يوم)</span>
+      </label>
+    </div>
+  </div>
+  
+  <!-- Start Availability Section -->
+  <div class="hero_banner">
+    <div class="personal_info rtl availability">
+      <p>المورد متاح إلى</p>
+      <div class="select_input_number d-flex justify-content-between">
+        <div class="number_input">
+          <input type="number" min="1" value="3" inputmode="numeric">
+
+        </div>
+        <div class="select_group">
+          <select name="select_time" id="select_time">
+            <option value="month" selected>شهر</option>
+            <option value="week">اسبوع</option>
+            <option value="day">يوم</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="time_given mt-3">
+        <p> وقت المورد</p>
+        <div class="service_time d-flex gap-5">
+          <label class="d-flex align-items-center" for="default_time">
+              <input class="ms-1" type="radio" name="time" id="default_time" (click)="handleRadioSelected(false)">
+              <img class="ms-3" width="18px" height="18px" src="../../../assets/images/box-time.png" alt="box-time">
+              <span>وقت الخدمة</span>
+            </label>
+            
+            <label class="d-flex align-items-center" for="fixed_time">
+              <input class="ms-1" type="radio" name="time" id="fixed_time" (click)="handleRadioSelected(true)">
+              <img class="ms-3" width="18px" height="18px" src="../../../assets/images/clock.png" alt="box-time">
+            <span>الوقت الثابت</span>
+          </label>
+          
+          <div class="fixed_time" [ngStyle]="{'visibility': isFixedTimeSelected ? 'visible' : 'hidden', 'opacity': isFixedTimeSelected ? '1' : '0'}">
+            <div class="d-flex justify-content-between align-items-center"> 
+              <i class="fa fa-plus" (click)="incrementTime()"></i>
+              <p> {{time}} دقيقة</p>
+              <i class="fa fa-minus" (click)="decrementTime()"></i>
+            </div>
+          </div>
+        </div>
+        
+        <p class="mt-3 mb-2"> الحجز المتعدد <img width="18px" height="18px" src="../../../assets/images/multible.png" alt=""></p>
+        
+        <div class="multible d-flex gap-4 align-items-center">
+          <label class="d-flex align-items-center" for="one_person">
+            <input class="ms-1" type="radio" name="person" id="one_person" (click)="handleMoreThanSelected(false)">
+            <img class="ms-3" width="14px" height="15px" src="../../../assets/images/person.png" alt="one person">
+            <span>حجز واحد فقط</span>
+          </label>
+          
+          <label for="more_person" class="d-flex align-items-center">
+            <input class="ms-1" type="radio" name="person" id="more_person" (click)="handleMoreThanSelected(true)">
+            <img class="ms-2" width="14px" height="15px" src="../../../assets/images/persons.png" alt="more person">
+            <span>حجز أكثر من شخص لنفس الموعد</span>
+          </label>
+
+          <div class="no_of_perosns d-flex align-items-center" [ngStyle]="{'visibility': isMoreThanOneSelected ? 'visible' : 'hidden', 'opacity': isMoreThanOneSelected ? '1' : '0'}">
+            <input type="number" value="50" min="1" inputmode="numeric">
+            <div>شخص</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- End Availability Section -->
+</section>

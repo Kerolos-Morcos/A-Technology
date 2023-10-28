@@ -1,0 +1,202 @@
+.hero_banner {
+  width: 49.3%;
+}
+.personal_info {
+  background-color: rgb(250, 249, 249);
+  border-radius: 15px;
+}
+.child_div {
+    margin-top: 6.5px;
+}
+.profile_picture {
+  position: relative;
+  margin-left: 20px;
+}
+.profile_picture img:nth-child(1) {
+  width: 100px;
+  height: 110px;
+  object-fit: contain;
+}
+.profile_picture img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.Written_info p {
+  direction: rtl;
+}
+.Written_info p:nth-child(1) {
+  color: rgb(146, 161, 173);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.Written_info input {
+  direction: rtl;
+  border: 1px solid rgb(178, 166, 166);
+  border-radius: 5px;
+  background-color: rgb(244, 238, 238);
+  width: 480px;
+  padding: 10px;
+  font-weight: 700;
+}
+.type_choice {
+  direction: rtl;
+  align-items: center;
+  margin-top: 30px;
+  background-color: rgb(250, 249, 249);
+  border-radius: 13px;
+  padding: 20px;
+  height: 100px;
+}
+.type_choice p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(146, 161, 173);
+  align-self: center;
+}
+.type_choice label:nth-child(2),
+label:nth-child(3) {
+  font-weight: 600;
+  color: rgb(158, 158, 178);
+}
+.type_choice span {
+  color: rgb(146, 161, 173);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Hide the default radio button */
+.type_choice input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a custom radio button */
+.type_choice input[type="radio"]::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2.5px solid rgb(224, 229, 242);
+  border-radius: 50%;
+  margin-left: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.type_choice input[type="radio"]:checked::before {
+  border-color: rgb(7, 113, 222);
+}
+
+.availability {
+  padding: 35px;
+  height: 319px;
+}
+.availability p {
+  color: rgb(146, 161, 173);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.select_input_number {
+  margin-top: 10px;
+  width: 570px;
+  height: 40px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 5px;
+  background-color: rgb(246, 242, 242);
+}
+
+.number_input input {
+  direction: ltr;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  height: 37px;
+  text-align: right;
+  background-color: rgb(246,242,242);
+}
+
+.select_group select {
+  border: none;
+  outline: none;
+  height: 37px;
+  width: 90px;
+  background-color: rgb(236, 241, 246);
+  text-align: center;
+  font-size: 14px;
+  padding-left: 25px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../../assets/images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 27px center;
+  background-size: 8px;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.time_given input {
+    cursor: pointer;
+}
+.fixed_time {
+    direction: rtl;
+    border: 1px solid rgb(178, 166, 166);
+    border-radius: 5px;
+    background-color: rgb(244, 238, 238);
+    width: 220px;
+    padding: 10px;
+    font-weight: 700;
+    margin-right: 53px;
+}
+.fixed_time p {
+    color: black;
+}
+.fixed_time i {
+    background-color: rgb(7, 113, 222);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.multible span, .service_time span {
+    font-size: 13px;
+}
+.multible label:nth-child(1) {
+    margin-left: 15px;
+}
+.no_of_perosns {
+    direction: rtl;
+    border: 1px solid rgb(178, 166, 166);
+    border-radius: 5px;
+    background-color: rgb(244, 238, 238);
+    width: 220px;
+    padding: 10px;
+    font-weight: 700;
+}
+.no_of_perosns input {
+    direction: ltr;
+    border: none;
+    outline: none;
+    text-align: right;
+    background-color: rgb(244, 238, 238);
+    width: 50px;
+  }
+
+  .no_of_perosns div {
+    font-size: 15px;
+}

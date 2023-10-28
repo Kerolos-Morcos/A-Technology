@@ -1,0 +1,20 @@
+<div class="row pt-5 d-flex flex-row-reverse">
+  <section class="col-lg-6">
+    <div class="back-arrow d-flex align-items-center justify-content-end">
+      <p class="pe-4 mb-0">إضافة موارد جديدة</p>
+      <i class="fa fa-arrow-right"></i>
+    </div>
+  </section>
+  <section class="col-lg-6">
+    <div class="d-flex">
+      <button class="me-3 delete-btn-style">حذف المورد
+        <img src="../../../assets/images/trash.png" alt="delete">
+      </button>
+      <button type="button" class="save-btn-style">حفظ التغييرات</button>
+      <div class="d-flex align-items-center ms-3">
+        <p class="pe-3 mb-1" [ngClass]="{'line-through': !isActivated}">مفعلة</p>
+        <app-toggle (toggleChange)="handleToggleChange($event)"></app-toggle>
+      </div>
+    </div>
+  </section>
+</div>
