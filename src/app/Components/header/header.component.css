@@ -5,7 +5,7 @@
   color: rgb(41, 45, 50);
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .back-arrow i:hover{
     background-color: rgb(250, 255, 243);

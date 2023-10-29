@@ -1,0 +1,63 @@
+.time_picker label{
+    margin-top: 30px;
+    margin-right: 28px;
+    color: rgb(146, 161, 173);
+    font-size: 14px;
+
+}
+
+.time_picker input {
+    width: 200px;
+    margin-bottom: 47.3px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 9px;
+    padding: 5px;
+    padding-right: 8px;
+    flex-direction: row-reverse;
+    text-align: right;
+    color: rgb(217, 217, 217);
+    font-size: 15px;
+}
+.time-actions{
+    display:inline-flex;
+    flex-direction:column;
+    
+}
+.time_picker input[type="time"]:focus {
+    outline: none;
+    border: 1px solid #2196F3;
+    border-radius: 9px;
+}
+.time_picker input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0.3;
+}
+.separator {
+    margin-top: 55px;
+    padding-right: 20px;
+}
+
+.time-actions {
+    padding-right: 20px;
+}
+.time-actions i:nth-child(1){
+    margin-top: 56px;
+}
+
+.time-actions i {
+    font-size: 12px;
+    background-color: rgb(241, 243, 244);
+    color: rgb(146, 161, 173);
+    border: 1px solid rgb(241, 243, 244);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 6px;
+    cursor: pointer;
+}
+.time-actions i:hover {
+    background-color: rgb(250, 255, 243);
+    border: 1px solid rgb(146, 161, 173);
+}
+
+
+
+

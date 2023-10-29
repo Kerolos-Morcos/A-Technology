@@ -1,0 +1,61 @@
+.application-form {
+    direction: rtl;
+    width: 100%;
+    background-color: rgb(250, 249, 249);
+    border-radius: 15px;
+}
+.work_time {
+    padding: 20px;
+    padding-right: 60px;
+}
+.button_group {
+    margin-left: 50px;
+    border: 1.5px solid rgb(230, 230, 245);
+    border-radius: 10px;
+}
+.working_hours_description {
+    color: rgb(146, 161, 173);
+    margin-top: -15px;
+    padding-right: 60px;
+}
+.toggler {
+    padding-right: 17px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time_picker label{
+    margin-top: 30px;
+    margin-right: 28px;
+    color: rgb(146, 161, 173);
+    font-size: 14px;
+
+}
+
+.time_picker input {
+    width: 200px;
+    margin-bottom: 27.3px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 9px;
+    padding: 5px;
+    padding-right: 8px;
+    flex-direction: row-reverse;
+    text-align: right;
+    color: rgb(217, 217, 217);
+    font-size: 15px;
+}
+.time-actions{
+    display:inline-flex;
+    flex-direction:column;
+    
+}
+.time_picker input[type="time"]:focus {
+    outline: none;
+    border: 1px solid #2196F3;
+    border-radius: 9px;
+}
+.time_picker input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0.3;
+}
+

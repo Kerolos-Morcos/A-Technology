@@ -107,7 +107,7 @@ label:nth-child(3) {
 
 .select_input_number {
   margin-top: 10px;
-  width: 570px;
+  width: 550px;
   height: 40px;
   border: 1px solid rgba(217, 217, 217, 1);
   border-radius: 5px;
@@ -157,7 +157,7 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 1px solid rgb(178, 166, 166);
     border-radius: 5px;
     background-color: rgb(244, 238, 238);
-    width: 220px;
+    width: 200px;
     padding: 10px;
     font-weight: 700;
     margin-right: 53px;
@@ -184,7 +184,7 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 1px solid rgb(178, 166, 166);
     border-radius: 5px;
     background-color: rgb(244, 238, 238);
-    width: 220px;
+    width: 200px;
     padding: 10px;
     font-weight: 700;
 }

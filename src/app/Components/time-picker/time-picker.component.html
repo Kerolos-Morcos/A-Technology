@@ -1,0 +1,15 @@
+<div class="time_picker d-flex">
+  <div>
+    <label class="d-block" for="start_time">وقت البدء</label>
+    <input class=" me-4" type="time" id="start_time">
+  </div>
+  <p class="separator">--</p>
+  <div>
+    <label class="d-block" for="end_time">وقت الانتهاء</label>
+    <input class=" me-4" type="time" id="end_time" >
+  </div>
+  <div class="time-actions">
+    <i class="fa fa-plus" (click)="pushDynamicComponent()"></i>
+    <i class="fa fa-minus" (click)="decrementDateTimePicker(0)"></i>
+  </div>  
+</div>

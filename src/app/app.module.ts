@@ -8,6 +8,8 @@ import { PrimaryButtonComponent } from './Components/primaryButton/primaryButton
 import { SecondaryButtonComponent } from './Components/secondaryButton/secondaryButton.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { HeroComponent } from './Components/hero/hero.component';
+import { ApplicationFormComponent } from './Components/application-form/application-form.component';
+import { TimePickerComponent } from './Components/time-picker/time-picker.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HeroComponent } from './Components/hero/hero.component';
     ToggleComponent,
     PrimaryButtonComponent,
     SecondaryButtonComponent,
-    HeroComponent
+    HeroComponent,
+    ApplicationFormComponent,
+    TimePickerComponent
   ],
   imports: [BrowserModule, MatSlideToggleModule, FormsModule],
   providers: [],

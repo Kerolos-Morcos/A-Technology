@@ -34,7 +34,7 @@
   
   <!-- Start Availability Section -->
   <div class="hero_banner">
-    <div class="personal_info rtl availability">
+    <div class="personal_info rtl availability pt-5">
       <p>المورد متاح إلى</p>
       <div class="select_input_number d-flex justify-content-between">
         <div class="number_input">
@@ -61,7 +61,7 @@
             
             <label class="d-flex align-items-center" for="fixed_time">
               <input class="ms-1" type="radio" name="time" id="fixed_time" (click)="handleRadioSelected(true)">
-              <img class="ms-3" width="18px" height="18px" src="../../../assets/images/clock.png" alt="box-time">
+              <img class="ms-2" width="18px" height="18px" src="../../../assets/images/clock.png" alt="box-time">
             <span>الوقت الثابت</span>
           </label>
           
@@ -90,7 +90,7 @@
           </label>
 
           <div class="no_of_perosns d-flex align-items-center" [ngStyle]="{'visibility': isMoreThanOneSelected ? 'visible' : 'hidden', 'opacity': isMoreThanOneSelected ? '1' : '0'}">
-            <input type="number" value="50" min="1" inputmode="numeric">
+            <input type="number" value="50" min="2" inputmode="numeric">
             <div>شخص</div>
           </div>
         </div>
