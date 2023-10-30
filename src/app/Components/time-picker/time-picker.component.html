@@ -8,8 +8,8 @@
     <label class="d-block" for="end_time">وقت الانتهاء</label>
     <input class=" me-4" type="time" id="end_time" >
   </div>
-  <div class="time-actions">
-    <i class="fa fa-plus" (click)="pushDynamicComponent()"></i>
-    <i class="fa fa-minus" (click)="decrementDateTimePicker(0)"></i>
-  </div>  
+  <div class="time-actions" >
+    <i class="fa fa-plus" (click)="pushDynamicComponent()" *ngIf="dynamicComponentRefs.length === 0"></i>
+    <i class="fa fa-minus" (click)="decrementDateTimePicker(0)"  [style.display]="showMinusIcons[0] ? 'block' : 'none'"></i>
+  </div> 
 </div>

@@ -10,7 +10,8 @@ import { ComponentFactoryResolver, ViewContainerRef } from '@angular/core';
 export class TimePickerComponent {
   timePickers: any[] = [];
   dynamicComponentRefs: any[] = [];
-  
+  showMinusIcons: boolean[] = [];
+
   constructor (private componentFactoryResolver: ComponentFactoryResolver,
     private viewContainerRef: ViewContainerRef) {
     
@@ -25,6 +26,10 @@ export class TimePickerComponent {
   
     // Store a reference to the dynamically added component
     this.dynamicComponentRefs.push(componentRef);
+    this.showMinusIcons.push(true);
+    if (this.showMinusIcons.length > 1) {
+      this.showMinusIcons[this.showMinusIcons.length - 2] = false;
+    }
   }
 
   decrementDateTimePicker(index: number) {
@@ -36,6 +41,12 @@ export class TimePickerComponent {
       this.dynamicComponentRefs.splice(index, 1);
     }
   
+this.showMinusIcons.splice(index, 1);
+
+      // Show the plus icon for the previous component, if available
+      if (index > 0) {
+        this.showMinusIcons[index - 1] = false;
+      }
   }
 
   
